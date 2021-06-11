@@ -1,0 +1,112 @@
+/* pages/personal/personal.wxss */
+/* 头部登录样式 */
+.personal{
+  width: 100%; height: 100%;
+}
+.personal .user-section{
+  height: 520rpx; position: relative; padding: 100rpx 30rpx 0;
+}
+ .user-section .personbg{
+   position: absolute; left: 0; top: 0; width: 100%; height: 100%; opacity: 0.7; filter: blur(1px);
+ }
+ .userInfoBox{
+   height: 180rpx; display: flex; align-items: center; position: relative; z-index: 1;
+ }
+ .userInfoBox .protrait{
+   width: 130rpx; height: 130rpx; border: 5rpx solid #fff; border-radius: 50%;
+ }
+ .userInfoBox .username{
+   font-size: 26rpx; color: #303133; margin-left: 20rpx;
+   font-weight: bold;
+ }
+ /* vip部分制作 */
+  .vipCardBox{
+    position: relative; display: flex; flex-direction: column; background: rgba(0, 0, 0, 0.7); height: 240rpx; color: #f7d680; border-radius: 16rpx 16rpx 0 0; padding: 20rpx 24rpx;
+  }
+  .vipCardBox .cardBg{
+    position: absolute; top: 20rpx; right: 0; width: 380rpx; height: 260rpx;
+  }
+  .vipCardBox .btn{
+    position: absolute; right: 20rpx; top: 16rpx; width: 132rpx; height: 40rpx; text-align: center; line-height: 40rpx; font-size: 22rpx; color: #36343c; z-index: 1;
+    border-radius: 20rpx; background-color: #f9e6af;
+  }
+  .vipCardBox .tit{
+    font-size: 24rpx; color: #f7d680;
+     margin-bottom: 28rpx;
+  }
+  .vipCardBox .tit .iconfont{
+    color:#f6e5a3;
+    margin-right: 16rpx;
+  }
+  .vipCardBox .em{
+    font-size: 34rpx; margin-top: 10rpx;
+  }
+  .vipCardBox .eb{
+    font-size: 24rpx; color: #d8cba9; margin-top: 10rpx;
+  }
+
+  /* 覆盖制作 */
+  .coverContainer{
+    margin-top: -150rpx; padding: 0 30rpx; position: relative; background: #f5f5f5; padding-bottom: 20rpx;
+  }
+  .coverContainer .arc{
+    position: absolute; left: 0; top: -34rpx; width: 100%; height: 36rpx;
+  }
+  /* 导航制作 */
+  .coverContainer .navSection{
+    display: flex; background: #fff; padding: 20rpx 0; border-radius: 15rpx;
+  }
+  .navSection .navItem{
+    width: 25%; box-sizing: border-box; display: flex; flex-direction: column; align-items: center;
+  }
+  .navSection .navItem .iconfont{
+    font-size: 50rpx; color: #0ef8e1; line-height: 70rpx;
+  }
+  .navSection .navItem text:last-child{
+    font-size: 22rpx;
+  }
+  
+  /* 个人中心样式 */
+  .personalContainer{
+    background: #fff;
+    margin-top: 20rpa;
+  }
+  /* .personalContainer .scrollView{
+    display: flex; height: 160rpx;
+  } */
+  /* .personalContainer .recentPlayContainer{
+    display: flex;
+  } */
+  .recentPlayContainer .title{
+    padding-left: 20rpx; font-size: 26rpx; color: #333; line-height: 80rpx;
+  }
+ /* .recentScroll .recentItem image{
+    width: 160rpx; height: 160rpx; margin-left: 20rpx; border-radius: 20rpx;
+  } */
+
+
+  .cardList{
+    margin-top: 20rpx;
+  }
+  .cardList .cardItem{
+    border-top: 1rpx solid #eee;
+    height: 80rpx; line-height: 80rpx; padding: 10rpx; font-size: 26rpx; color: #333;
+  }
+  .cardList .cardItem .more{
+    float: right;  color: #0ef8e1;
+  }
+  
+  /* 最近播放记录 */
+ .recentScroll {
+  display: flex;
+  height: 200rpx;
+}
+.recentItem {
+  display: flex;
+  margin-right: 20rpx;
+}
+.recentItem image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}

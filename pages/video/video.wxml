@@ -1,0 +1,29 @@
+<!--pages/video/video.wxml-->
+
+<view class="videoContainer">
+<!-- 头部搜索区 -->
+  <view class="header">
+    <image src="/static/images/video/video.jpg"></image>
+    <view class="search">搜索</view>
+    <image class="iconfont icon-dianbiaohui"></image>
+  </view>
+
+  <!-- 导航区 -->
+  <scroll-view scroll-x enable-flex class="navScroll">
+    <view class="nav">
+      <view class="navItem active">one</view>
+    </view>
+    <view class="nav">
+      <view class="navItem">one</view>
+    </view>
+    <view class="nav">
+      <view class="navItem">one</view>
+    </view>
+    <view class="nav">
+      <view class="navItem">one</view>
+    </view>
+    <view class="nav">
+      <view class="navItem">one</view>
+    </view>
+  </scroll-view>
+</view>

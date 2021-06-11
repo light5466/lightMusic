@@ -1,0 +1,33 @@
+/* pages/video/video.wxss */
+
+/* 头部区域 */
+  .header{
+    display: flex;
+    padding: 10rpx;
+  }
+ .header image{
+  width: 60rpx; height: 60rpx;
+ }
+ .header .iconfont{
+  font-size: 60rpx; color: #0ef8e1;
+ }
+ .header .search{
+   border: 1rpx solid #eee;border-radius: 30rpx; margin: 0 20rpx; font-size: 26rpx; color: #0ef8e1;
+   flex: 1; text-align: center; line-height: 60rpx;
+ }
+
+ /* 导航区 */
+ .navScroll{
+   display: flex;
+   /* 禁止换行 */
+   white-space: nowrap;
+ }
+ .navScroll .nav{
+   padding: 10rpx 20rpx;
+   width: 20%;
+   margin-right: 20rpx;
+   height: 60rpx; line-height: 60rpx; font-size: 28rpx;
+ }
+ .navScroll .nav .active{
+   border-bottom: 1rpx solid #0ef8e1;
+ }

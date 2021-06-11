@@ -1,0 +1,8 @@
+/* component/navHeader/navHeder.wxss */
+
+ .header .title{
+  font-size: 24rpx; line-height: 80rpx; color: #888; 
+}
+ .header .headerMore{
+  font-size: 20rpx; border:1rpx solid #eee; border-radius: 30% ; float:right; padding: 10rpx 20rpx;color: #0ef8e1;
+}
