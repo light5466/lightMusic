@@ -24,12 +24,12 @@
 
     /* 推荐歌曲样式 */
      .recommendContainer{ padding: 10rpx 20rpx;}
-     /* .recommendContainer .header .title{
+     .header .title{
        font-size: 24rpx; line-height: 80rpx; color: #888; 
      }
-     .recommendContainer .header .headerMore{
+     .header .headerMore{
        font-size: 20rpx; border:1rpx solid #eee; border-radius: 30% ; float:right; padding: 10rpx 20rpx;color: #0ef8e1;
-     } */
+     }
 
      /* 滑块内容 */
      .recommendScoll{

@@ -1,0 +1,74 @@
+
+ .searchContainer {
+   padding: 10rpx 20rpx;
+ }
+ /* 头部样式去 */
+ .header {
+   display: flex; height: 70rpx; line-height: 70rpx; 
+ }
+ .header .searchInput{
+   position: relative;
+   display: flex;
+   flex: 1; line-height: 70rpx; border-radius: 35rpx; background-color: rgba(240, 240, 248, 0.3);border:1rpx solid rgba(222, 222, 222, 0.5);
+ }
+ .searchInput .searchIcon{
+   padding-left: 20rpx; line-height: 70rpx;
+ }
+ .searchInput input{
+   height: 70rpx; line-height: 70rpx; margin-left: 20rpx;
+ }
+ .searchInput .inputStyle{
+   color: #0ef8e1; font-size: 26rpx; opacity: 0.4;
+ }
+ .header .cancel{
+   width: 120rpx; height: 70rpx; margin-left: 20rpx; background-color: #0ef8e1;border-radius: 35rpx;text-align: center; line-height: 70rpx; color: white; font-size: 28rpx;
+ }
+
+ .searchInput .clear {
+  height: 70rpx; line-height: 70rpx; position: absolute; right: 20rpx;
+ }
+
+ /* 热歌榜样式去 */
+ .hotContainer .title{
+   line-height: 80rpx; height: 80rpx;font-size: 26rpx; margin-top: 10rpx;border-bottom: 1rpx solid rgba(222, 222, 222, 0.5);
+ }
+ .hotContainer .hotList{
+   display: flex; flex-wrap: wrap; width: 92%; margin: 0 auto; 
+ }
+ .hotList .hotItem{
+   width: 50%; height: 80rpx; line-height: 80rpx; font-size: 26rpx;
+ }
+ .hotItem .order{
+   margin: 0 15rpx;
+ }
+ .hotItem .hotImg{
+   width: 35rpx; height: 20rpx; margin-left: 10rpx;
+ }
+
+ /* 搜索列表样式 */
+ .showSearchContent .searchContent{
+   height: 60rpx; line-height: 60rpx; font-size: 24rpx; color: #0ef8e1; border-bottom: 1rpx solid #0ef8e1;
+ }
+ .showSearchContent .searchList .searchItem{
+   height: 80rpx; line-height: 80rpx; font-size: 28rpx; display: flex;
+ }
+ .searchItem .content{
+   flex: 1; margin-left: 20rpx; border-bottom: rgba(233, 244, 244, 0.7);
+ }
+
+ /* 历史记录样式、、 */
+  .history {
+    position: relative;
+    display: flex;  flex-wrap: wrap; margin-top: 10rpx;
+  }
+  .history .title{
+    font-size: 28rpx; height: 50rpx; line-height: 50rpx; 
+  }
+  .history .historyItem{
+    height: 50rpx; line-height: 50rpx;
+    font-size: 24rpx; background-color: #eff; width: auto; border-radius: 25rpx;
+     margin-left: 18rpx; padding: 0 20rpx;
+  }
+  .history .iconfont{
+    position: absolute; right: 20rpx; bottom: 0rpx;
+  }

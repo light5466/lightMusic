@@ -50,7 +50,7 @@ Page({
     }
 
     // 后端验证
-    let result = await request("/login/cellphone",{phone,password})
+    let result = await request("/login/cellphone",{phone,password,isLogin:true})
 
     if (result.code ===200) {
       // 登录成功 首先获取用户信息 然后跳转个人页面 把信息传过去

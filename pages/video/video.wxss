@@ -21,13 +21,69 @@
    display: flex;
    /* 禁止换行 */
    white-space: nowrap;
+   height: 70rpx;
+   margin-bottom: 5rpx;
  }
  .navScroll .nav{
    padding: 10rpx 20rpx;
-   width: 20%;
+   margin-right: 20rpx;
    margin-right: 20rpx;
    height: 60rpx; line-height: 60rpx; font-size: 28rpx;
+   border-right:1rpx solid #eff ;
+   /* box-sizing: border-box; */
+ }
+ .navScroll .nav .navItem{
+   height: 60rpx;
+  box-sizing: border-box;
  }
  .navScroll .nav .active{
    border-bottom: 1rpx solid #0ef8e1;
  }
+
+ /* 视频列表的样式 */
+  .videoScroll {
+    width: 100%;
+    /* calc()可以动态计算宽高，表示滚动只能在这个区域内滚动  运算符两边一定要加空格，不然会失效*/
+    height: calc(100vh - 152rpx);
+  }
+  .videoScroll .videoItem{
+    padding: 10rpx 2%;
+  }
+  .videoScroll .videoItem .common{
+    width: 100%; border-radius: 15rpx; height: 360rpx;
+  }
+  /* 评论部分 */
+   .videoItem .content{
+     font-size: 26rpx; height: 80rpx; line-height: 80rpx;
+     max-width: 500rpx; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+   }
+   .footer{
+     border-top: 1rpx solid #eff;
+     padding: 20rpxx 0;
+   }
+   .footer .avatar{
+     width: 60rpx; height: 60rpx; border-radius: 50%;
+     vertical-align: middle;
+   }
+   .footer .nickName{
+     font-size: 26rpx; vertical-align: middle;
+     margin-left: 20rpx;
+   }
+   .footer .comments{
+     float: right;
+   }
+   .comments .itemBtn{
+     display: inline; padding: 0; background-color: transparent;
+     border-color: transparent;
+     padding-left: 50rpx;
+   }
+   .comments .itemBtn:after{
+    border: none;
+   }
+
+   .comments .item{
+     margin-left: 50rpx; position: relative;
+   }
+   .comments .item .count{
+     position: absolute; top: -20rpx; font-size: 20rpx;
+   }

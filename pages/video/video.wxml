@@ -4,26 +4,47 @@
 <!-- 头部搜索区 -->
   <view class="header">
     <image src="/static/images/video/video.jpg"></image>
-    <view class="search">搜索</view>
+    <view class="search" bindtap="toSearch">搜索</view>
     <image class="iconfont icon-dianbiaohui"></image>
   </view>
 
   <!-- 导航区 -->
-  <scroll-view scroll-x enable-flex class="navScroll">
-    <view class="nav">
-      <view class="navItem active">one</view>
-    </view>
-    <view class="nav">
-      <view class="navItem">one</view>
-    </view>
-    <view class="nav">
-      <view class="navItem">one</view>
-    </view>
-    <view class="nav">
-      <view class="navItem">one</view>
-    </view>
-    <view class="nav">
-      <view class="navItem">one</view>
+  <scroll-view scroll-x enable-flex class="navScroll" scroll-into-view="{{ 's'+ videoId}}" scroll-with-animation>
+    <view id="{{ 's'+item.id}}" class="nav" wx:for="{{ videoGroupList }}" wx:key="id">
+      <view class="navItem {{ videoId == item.id ? 'active' : ' ' }}" bindtap="changeVideo" id="{{ item.id }}">{{ item.name }}</view>
     </view>
   </scroll-view>
+
+  <!-- 视频区 -->
+  <scroll-view scroll-y class="videoScroll" refresher-enabled bindrefresherrefresh="handleRefresh" refresher-triggered="{{ isTrigger }}" bindscrolltolower="handleLower">
+    <view class="videoItem" wx:for="{{ videoList }}" wx:key="id">
+      <video class="common" src="{{ item.data.urlInfo.url }}" bindplay="play" id="{{ item.data.vid }}" poster="{{ item.data.coverUrl}}" wx:if="{{ imgId == item.data.vid }}" object-fit="cover" bindtimeupdate="handleUpdataTime" bindended="handleEnd"></video>  
+      <!-- poster为设计覆盖的图片 -->
+      <!-- 性能优化，用图片代替视频显示 -->
+      <image wx:else class="common" id="{{ item.data.vid}}" bindtap="play" src="{{ item.data.coverUrl }}"></image>
+
+      <!-- 评论部分 -->
+      <view class="content">{{ item.data.title }} </view>
+      <view class="footer">
+        <image class="avatar" src="{{ item.data.creator.avatarUrl }}"></image>
+        <text class="nickName">{{ item.data.creator.nickname }} </text>
+        <view class="comments">
+          <text class="item">
+            <text class="iconfont icon-dianzan"></text>
+            <text class="count">{{ item.data.praisedCount }}</text>
+          </text>
+          <text class="item">
+            <text class="iconfont icon-xinxi1"></text>
+            <text class="count">{{ item.data.commentCount }}</text>
+          </text>
+          <button class="itemBtn" open-type="share">
+            <text class="iconfont icon-chakantiezigengduo"></text>
+          </button>
+
+        </view>
+
+      </view>
+    </view>
+  </scroll-view>
+
 </view>
