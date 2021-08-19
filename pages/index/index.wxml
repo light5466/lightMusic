@@ -34,15 +34,15 @@
   <!-- 推荐歌曲区域 -->
   <view class="recommendContainer">
   <!-- 推荐歌曲区域 -->
-    <view class="header">
+    <!-- <view class="header">
       <text class="title">推荐歌曲</text>
       <view>
         <text>为你精心挑选</text>
         <text class="headerMore">查看更多</text>
       </view>
-    </view>
+    </view> -->
     <!-- 组件使用 -->
-    <!-- <navHeader title="推荐歌曲" nav="为你精心挑选"></navHeader> -->
+    <navHeader title="推荐歌曲" nav="为你精心挑选"></navHeader>
    <!-- 滑块内容区 -->
     <scroll-view class="recommendScoll" enable-flex  scroll-x='true'>
       <view class="scrollItem" wx:for="{{recommendList}}" wx:key="id">
